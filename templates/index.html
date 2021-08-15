@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>첫 Flask 프로젝트</title>
+
+
+	<!-- script-->
+	<script type="text/javascript">
+		function inOffice() {
+			// 현재 시간을 가져옵니다.
+			let d = new Date();
+			let currentDate = d.getFullYear() + "." + (d.getMonth() + 1) + "." + d.getDate() + " " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+			let btnElement = document.getElementById("btn");
+			alert(btnElement);
+			btnElement.innerText = currentDate;
+		}
+	</script>
+	<style>
+		* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		}
+		.container {
+			margin: 100px;
+		}
+
+		.my-button {
+			width: 200px;
+			height: 200px;
+			border: none;
+			border-radius: 100px;
+			outline-style: initial;
+			#background: #b71540;
+			color: black;
+			cursor: pointer;
+			box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+		}
+		.my-button: hover {
+			background: #eb2f06;
+		}
+	</style>
+    </head>
+
+
+    <body>
+	    <div class="container">
+		    <button id="btn" onclick="inOffice()" type="button" class="my-button">출근</button>
+	    </div>
+    </body>
+</html>
