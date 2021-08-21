@@ -14,8 +14,10 @@
 			let d = new Date();
 			let currentDate = d.getFullYear() + "." + (d.getMonth() + 1) + "." + d.getDate() + " " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
 			let btnElement = document.getElementById("btn");
-			alert(btnElement);
 			btnElement.innerText = currentDate;
+
+			// css style 변경
+			btnElement.style.backgroundColor = "red";
 		}
 	</script>
 	<style>
